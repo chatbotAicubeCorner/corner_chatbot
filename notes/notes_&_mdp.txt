@@ -1,0 +1,116 @@
+MDP:
+cornerai3@outlook.com
+ai3chatbot
+
+Slack
+michszychiewicz@gmail.com
+rootrootroot
+
+
+
+Utiliser GitKraken
+Choisir une methode
+
+Notes Louis:
+-dégager les intensions
+-> rediriger vers l'info
+-> activer le service
+
+ex: accès salle réunion
+disponibilité salle/collaborateurs
+
+
+réservation de salle, de véhicule, organisation de déplacement, billet d'avion/train, prise de rendez-vous, 
+
+today room: outils Microsoft teams, bot framework, LUIS, graph, Office 365
+
+Notes Mich:
+
+crf champ aléatoire conditionnel
+intent recognition
+intent classifier
+
+sql
+id nom de sallle  horraire debut horraire fin, insert date, last update
+
+enum salle => 
+
+lister tous les scenario + cas d'ecxeptions
+
+pas Slack
+
+
+Scenarii :
+
+Employée : E
+Chatbot : B
+
+
+Introduction:
+B : Bonjour, en quoi puije vous être utile?
+B : Bonjour, comment puije vous assister?
+
+
+
+
+Reservation de salles:
+
+(query idéale et chemin simple)
+E : Je voudrais reserver une salle
+
+B : Oui pour quelle date ?
+
+E : Pour Aujourd'hui ( actual date )//, demain ( actual date +1), après demain (actual +2), pour le 15/01/19
+E' : Une pour aujourd'hui et demain et le 01/01/2000
+
+B : D'accord pour quelle heure ?
+
+E : De 16h à 18h
+
+B : La salle rouge, bleu et verte sont disponible. Avez vous une préférence ?
+
+E : La salle rouge
+
+B : Très bien la salle rouge vous est reservez pour aujourd'hui de 16h à 18h?
+B2 : Si vous voulez que j'envoie une notification à vos collègues, il vous suffit de mettre leurs pseudo 
+
+
+E : 
+B : Permettez moi de reformuler
+E : O / N
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
