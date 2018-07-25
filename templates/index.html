@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends 'base.html' %}
+
+
+{% block body %}
+
+            <form method="POST" class="form-group" >
+                <div class="input-group">
+                    <input class="form-control" type="text" name="chatbot_message" placeholder="Type your message here">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-submit ">Send</button>
+
+
+                    </span>
+                </div>
+            </form>
+
+            <h1>
+                {{message}}
+            </h1>
+
+            <h2>
+                {{answer}}
+            </h2>
+
+
+
+{% endblock %}
+
+

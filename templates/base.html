@@ -1,10 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Corner</title>
+    <style>
+
+body {
+  background: white;
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+blockquote {
+  margin: 0 auto;
+  max-width: 320px;
+}
+p {
+  margin: 0 0 0.5em;
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  background: #e5e5ea;
+  max-width: 75%;
+  clear: both;
+  position: relative;
+}
+p.them {
+  float: left;
+}
+p.them::after {
+  content: "";
+  position: absolute;
+  left: -0.5em;
+  bottom: 0;
+  width: 0.5em;
+  height: 1em;
+  border-right: 0.5em solid #e5e5ea;
+  border-bottom-right-radius: 1em 0.5em;
+}
+p.me {
+  float: right;
+  background-color: #1289fe;
+  color: white;
+}
+p.me::after {
+  content: "";
+  position: absolute;
+  right: -0.5em;
+  bottom: 0;
+  width: 0.5em;
+  height: 1em;
+  border-left: 0.5em solid #1289fe;
+  border-bottom-left-radius: 1em 0.5em;
+}
+
+    </style>
 </head>
 <body>
-$END$
+
+{% block body  %}
+
+
+{% endblock %}
+
 </body>
 </html>

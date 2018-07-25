@@ -1,4 +1,4 @@
-MDP:
+﻿MDP:
 cornerai3@outlook.com
 ai3chatbot
 
@@ -80,7 +80,32 @@ B : Permettez moi de reformuler
 E : O / N
 
 
+(query simple)
+E : Serait t'il possible de reserver une salle pour aujourd'hui de 10h à 12h?
 
+
+
+
+Concept Logique:
+Petit dataset à faire soit même parce qu'on va pas lui demander quinze mille truc non plus
+
+
+E :Je voudrais reserver une salle de réunion
+=> extract action: reserver 
+=> extract nombre : une
+=> extract objet : salle de réunion
+
+result => {
+	intent : reserver salle de réunion
+	prob : 0.89% => 
+} x 1
+
+E : Je voudrais reserver deux billets de train
+=> 
+
+word to vec classifier pré entrainner
+
+snips rasanlu
 
 
 
